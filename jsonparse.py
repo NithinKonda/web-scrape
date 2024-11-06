@@ -93,7 +93,7 @@ else:
 
 
 
-print("INTERNSHALA")
+print("\n\n\nINTERNSHALA")
 
 
 
@@ -125,7 +125,7 @@ for job_entry in soup.find_all("div", class_="individual_internship"):
         "Company": company,
         "Location": location,
         "Pay": pay,
-        "Link": href  # Add the href to the dictionary
+        "Link": "https://internshala.com/"+href  # Add the href to the dictionary
     })
     for job in jobs:
         print(f"Title: {job['Title']}")
@@ -134,3 +134,8 @@ for job_entry in soup.find_all("div", class_="individual_internship"):
         print(f"Pay: {job['Pay']}")
         print(f"Link : {job['Link']}")
         print("-" * 40)
+
+
+
+
+
