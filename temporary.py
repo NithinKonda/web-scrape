@@ -18,6 +18,7 @@ jobs = []
 
 # Extract job information
 for job_entry in soup.find_all("div", class_="base-search-card__info"):
+    print(job_entry) 
     title_element = job_entry.find("h3", class_="base-search-card__title")
     title = title_element.get_text(strip=True) if title_element else "N/A"
     

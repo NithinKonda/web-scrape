@@ -132,7 +132,7 @@ for job_entry in soup.find_all("div", class_="base-search-card__info"):
     
     # Extract the job link
     job_link_element = job_entry.find("a", class_="base-card__full-link")
-    job_link = job_link_element['href'] if job_link_element else "N/A"
+    job_link = job_link_element.get('href') if job_link_element else "N/A"
 
     jobs.append({
         "Title": title,
