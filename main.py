@@ -19,7 +19,7 @@ import json
 def parse_output(output):
     try:
         jobs = json.loads(output)
-        return {"jobs": jobs}
+        return {"fetched jobs": jobs}
     except Exception as e:
         return {"error": str(e)}
 
